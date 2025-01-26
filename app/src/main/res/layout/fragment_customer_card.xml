@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerCardFragment"
+    android:adjustViewBounds="true"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="2dp"
+        android:fitsSystemWindows="true">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/customercard_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationIcon="@drawable/baseline_close_24"
+            app:navigationIconTint="@color/black"
+            android:paddingEnd="8dp"
+            android:background="#00000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/customercard_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/card_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingHorizontal="32dp"
+        android:paddingTop="64dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="128dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dummy_logo_icon"
+                app:tint="@color/customercard_color_primary"
+                android:layout_marginRight="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/customercard_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/glacialindifference_bold"
+                    android:textSize="24sp"
+                    android:textColor="@color/customercard_color_primary"
+                    android:textAllCaps="true"
+                    android:text="Nombre" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/customercard_color_text"
+                    android:fontFamily="@font/glacialindifference_regular"
+                    android:text="Gracias por ser un cliente tan leal y por seguir eligiéndome, tanto a mí como a mi trabajo." />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/glacialindifference_bold"
+                android:textColor="@color/customercard_color_text"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:letterSpacing="0.5"
+                android:text="Tarjeta de lealtad" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <GridLayout
+                    android:id="@+id/customercard_visits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:columnCount="3"
+                    android:rowCount="2">
+                </GridLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/customercard_barcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/sample_barcode"
+                    android:paddingHorizontal="32dp" />
+
+                <TextView
+                    android:id="@+id/customercard_uid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:textColor="@color/customercard_color_text"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:letterSpacing="2"
+                    android:text="ABC123" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/customercard_expiration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/glacialindifference_regular"
+                    android:textColor="@color/customercard_color_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

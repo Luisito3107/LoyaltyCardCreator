@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Tarjetas de lealtad</string>
+
+    <string name="action_scan">Escanear tarjeta</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_ok">Aceptar</string>
+
+    <string name="scanner_helper_0">Escanea el código de barras del cliente</string>
+    <string name="scanner_helper_1">Encuádralo en el centro del escáner</string>
+    <string name="scanner_toggle_flash">Alternar flash</string>
+    <string name="zxing_msg_default_status"></string>
+    <string name="scanner_error_customer_notfound">No se encontró al cliente</string>
+    <string name="scanner_error_permissions">Sin permisos de cámara</string>
+
+    <string name="register_title">Registrar cliente</string>
+    <string name="register_title_update">Editar cliente</string>
+    <string name="register_label_customer_data">Datos del cliente</string>
+    <string name="register_field_name">Primer nombre</string>
+    <string name="register_field_phone">Número de teléfono</string>
+    <string name="register_label_loyalty_data">Tarjeta de lealtad</string>
+    <string name="register_field_customer_id">Identificador único</string>
+    <string name="register_field_expiration">Fecha de expiración</string>
+    <string name="register_field_visits">Visitas</string>
+    <string name="register_field_visits_sub">Restar una visita</string>
+    <string name="register_field_visits_add">Sumar una visita</string>
+    <string name="register_delete">Eliminar clienta</string>
+    <string name="register_delete_confirm_title">¿Realmente quieres eliminar a este cliente?</string>
+    <string name="register_delete_confirm_message">Esta acción no se puede deshacer.</string>
+    <string name="register_delete_confirm_ok">Eliminar</string>
+    <string name="register_delete_success">Cliente eliminado</string>
+    <string name="register_save">Guardar cliente</string>
+    <string name="register_save_success">Cliente guardado</string>
+    <string name="register_save_error">Ocurrió un error</string>
+    <string name="register_field_name_error">El campo de nombre debe tener al menos 3 caracteres</string>
+    <string name="register_field_phone_error">El número de teléfono debe tener 10 dígitos</string>
+    <string name="register_field_phone_error_duplicate">Ya hay un cliente con ese número de teléfono</string>
+    <string name="register_onback_confirm_title">¿Quieres salir sin guardar?</string>
+    <string name="register_onback_confirm_message">Se perderán todos los cambios que hayas hecho.</string>
+    <string name="register_onback_confirm_ok">Salir</string>
+
+    <string name="customerlist_title">Lista de clientes</string>
+    <string name="customerlist_empty">No se encontraron clientes con tarjetas de lealtad activas</string>
+    <string name="customerlist_search">Buscar clienta</string>
+    <string name="customerlist_deleteall">Eliminar todo</string>
+    <string name="customerlist_deleteall_confirm_title">¿Realmente quieres eliminar todo?</string>
+    <string name="customerlist_deleteall_confirm_message">Esta acción no se puede deshacer.</string>
+    <string name="customerlist_deleteall_success">Todos los clientes fueron eliminadas</string>
+
+    <string name="customercard_share">Compartir imagen</string>
+    <string name="customercard_expiration">Válida hasta el %s</string>
+</resources>

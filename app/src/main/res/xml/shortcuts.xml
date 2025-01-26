@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="scan"
+        android:enabled="true"
+        android:icon="@drawable/outline_qr_code_scanner_24"
+        android:shortcutShortLabel="@string/action_scan"
+        android:shortcutLongLabel="@string/action_scan"
+        android:shortcutDisabledMessage="@string/action_scan">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.luislezama.customloyaltycards"
+            android:targetClass="com.luislezama.customloyaltycards.MainActivity">
+
+            <extra android:name="openScanner" android:value="true" />
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="register"
+        android:enabled="true"
+        android:icon="@drawable/outline_person_add_24"
+        android:shortcutShortLabel="@string/register_title"
+        android:shortcutLongLabel="@string/register_title"
+        android:shortcutDisabledMessage="@string/register_title">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.luislezama.customloyaltycards"
+            android:targetClass="com.luislezama.customloyaltycards.MainActivity" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.luislezama.customloyaltycards"
+            android:targetClass="com.luislezama.customloyaltycards.RegisterActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="customerlist"
+        android:enabled="true"
+        android:icon="@drawable/outline_format_list_bulleted_24"
+        android:shortcutShortLabel="@string/customerlist_title"
+        android:shortcutLongLabel="@string/customerlist_title"
+        android:shortcutDisabledMessage="@string/customerlist_title">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.luislezama.customloyaltycards"
+            android:targetClass="com.luislezama.customloyaltycards.MainActivity" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.luislezama.customloyaltycards"
+            android:targetClass="com.luislezama.customloyaltycards.CustomerListActivity" />
+    </shortcut>
+</shortcuts>
